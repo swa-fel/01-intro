@@ -9,11 +9,28 @@
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
       body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
+      h1, h2, h3, h4 {
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      .remark-slide-content { font-size: 1.6em; }
+      .remark-slide-content h1 { font-size: 2.4em; }
+      .remark-slide-content h2 { font-size: 2.0em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .remark-slide-content h4 { font-size: 1.2em; }
+      .remark-code { font-size: 0.8em; }
+      .remark-slide-number { font-size: 0.8em; }
+      .remark-slide-content ul { line-height: 1.4em; }
+
+      .small { font-size: 0.7em; }
+
+      img { max-width: 100%; }
+      blockquote {
+        font-style: italic;
+        color: #777;
+      }
     </style>
   </head>
   <body>
@@ -23,7 +40,7 @@ class: center, middle
 
 # Software Architecture
 
-By Red Hat Czech
+### by Red Hat Czech
 
 ---
 
@@ -40,11 +57,11 @@ By Red Hat Czech
 # Course overview
 
 1. Basic principles of Cloud Applications
-2. Linux Containers
-3. Multi-container application orchestration
-4. Platform as a service extension capabilities through automatic deployment
-5. Deployment of traditional Java EE applications in the cloud
-6. MicroService Architecture (MSA)
+1. Linux Containers
+1. Multi-container application orchestration
+1. Platform as a service extension capabilities through automatic deployment
+1. Deployment of traditional Java EE applications in the cloud
+1. MicroService Architecture (MSA)
 
 ---
 
@@ -55,10 +72,13 @@ By Red Hat Czech
 * Reading assignments
 
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    <script src="remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+      var slideshow = remark.create({
+        ratio: '4:3',
+        highlightLines: false
+      });
     </script>
   </body>
 </html>
